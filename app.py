@@ -1,6 +1,8 @@
 import streamlit as st
 import pandas as pd
 import pickle
+import joblib
+import tempfile
 import plotly.express as px
 from PIL import Image
 
@@ -366,12 +368,29 @@ uploaded_model = st.file_uploader(
 
 if uploaded_model is not None:
     try:
-        model = pickle.load(uploaded_model)
-        st.success("✅ Pickle model loaded successfully!")
-        st.write("Loaded Model:", model)
+        # Save uploaded file temporarily
+        with tempfile.NamedTemporaryFile(delete=False, suffix='.pkl') as tmp_file:
+            tmp_file.write(uploaded_model.read())
+            tmp_path = tmp_file.name
+
+        # Load model using joblib
+        model = joblib.load(tmp_path)
+
+        st.success("✅ Machine Learning model loaded successfully!")
+        st.write("Loaded Model Type:", type(model))
 
     except Exception as e:
-        st.error(f"❌ Error loading model: {e}")
+        st.error("❌ Model compatibility error")
+        st.code(str(e))
+
+        st.info(
+            """
+            Fix:
+            - Use same scikit-learn version used during training
+            - Re-save model using joblib
+            - Add correct dependencies in requirements.txt
+            """
+        )
 
 # =========================================
 # FOOTER
