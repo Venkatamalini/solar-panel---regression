@@ -1,23 +1,79 @@
-# solar panel - regression
- The variable to be predicted is continuous (energy production). Therefore, this is an Regression project. The primary goal is to model energy production as a function of environmental variables
+# ☀️ Solar Power Generation Prediction
 
-Data Set Description
+## 🎯 Business Objective
+Predict solar power generation using environmental and system-related features to improve energy efficiency and planning.
 
-The file solarpowergeneration.csv contains the data for this example. Here, the number of variables (columns) is 10, and the number of instances (rows) is 2920. We have the following variables for this analysis:
+---
 
-•	distance_to_solar_noon, in radians.
+## 📊 Project Overview
+This project focuses on building a regression model to estimate solar power output based on input features such as weather conditions and system parameters.
 
-•	temperature, daily average temperature, in degrees Celsius.
+---
 
-•	wind_direction, daily average wind direction, in degrees (0-360).
+## 🔍 Key Features
+- Data preprocessing and cleaning  
+- Handling missing values  
+- Feature selection  
+- Regression model building  
+- Model evaluation  
 
-•	wind_speed, daily average wind speed, in meters per second.
+---
 
-•	sky_cover, on a five-step scale from 0 to 4, with 0 completely clear and 4 wholly covered.
+## 🧠 Model Used
+- Linear Regression  
+- (You can add: Random Forest / Decision Tree if used)
 
-•	visibility, in kilometers.
+---
 
-•	humidity, in percentage.
-•	average_wind_speed, average wind speed during the 3 hours de measure was taken in meters per second.
-•	average_pressure, average barometric pressure during the 3 hours the measure was taken in, in mercury inches.
-•	power_generated(Target), in Jules for each 3 hours
+## 📈 Workflow
+1. Data Collection  
+2. Data Cleaning  
+3. Exploratory Data Analysis (EDA)  
+4. Feature Engineering  
+5. Model Training  
+6. Evaluation  
+
+---
+
+## 💻 Tech Stack
+- Python  
+- Pandas  
+- NumPy  
+- Scikit-learn  
+- Matplotlib / Seaborn  
+
+---
+
+## 📂 Dataset
+Solar power generation dataset containing:
+- Environmental factors (temperature, irradiation, etc.)  
+- System parameters  
+- Power output  
+
+---
+
+## 📊 Results
+- Built a regression model to predict solar power output  
+- Evaluated using metrics like MAE, MSE, R²  
+
+---
+
+## 📸 Screenshots
+
+### 📊 Data Analysis
+![EDA](screenshots/eda.png)
+
+### 📈 Prediction Graph
+![Prediction](screenshots/prediction.png)
+
+---
+
+## 🚀 Future Improvements
+- Improve model accuracy using advanced algorithms  
+- Deploy as a web app (Streamlit)  
+- Real-time prediction integration  
+
+---
+
+## 🔗 GitHub Repository
+https://github.com/Venkatamalini/solar-panel---regression
