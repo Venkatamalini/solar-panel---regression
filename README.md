@@ -80,7 +80,8 @@ https://github.com/Venkatamalini/solar-panel---regression
 
 
 
-## 🚀 Live Prediction App 
-This project includes a Streamlit-based web application for predicting solar power output.
+## 🚀 Live Streamlit App
 
-To run:
+🔗 Click here to open the app:
+
+[Solar Panel Power Prediction App](https://YOUR_STREAMLIT_URL.streamlit.app)
