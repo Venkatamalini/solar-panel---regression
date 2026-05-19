@@ -75,13 +75,10 @@ Solar power generation dataset containing:
 
 ---
 
-## 🔗 GitHub Repository
-https://github.com/Venkatamalini/solar-panel---regression
-
 
 
 ## 🚀 Live Streamlit App
 
 🔗 Click here to open the app:
 
-[Solar Panel Power Prediction App](https://YOUR_STREAMLIT_URL.streamlit.app)
+[Solar Panel Power Prediction App](solar-panel---regression-t.streamlit.app/)
